@@ -70,6 +70,7 @@ def train(epochs, batch_size, lr):
         logging.info(f"epoch: {epoch}, train_loss: {train_loss:0.8f}")
 
         if epoch % 100 == 0 and epoch != 0:
+
             dev_total_tokens = 0.0
             dev_total_loss = 0.0
             dev_tokens = 0.0
