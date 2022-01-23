@@ -59,7 +59,7 @@ def train(epochs, batch_size, lr):
                              batch.trg_y.contiguous().view(-1)) / batch.ntokens
 
             loss.backward()
-            optimizer.step()
+            optimizer.optimizer.step()
 
             total_loss += loss
             total_tokens += batch.ntokens
